@@ -29,8 +29,9 @@ buscarEstudiante id universidad =
 -- Calcular el tiempo que un estudiante ha estado en la universidad
 tiempoEnUniversidad :: Estudiante -> IO NominalDiffTime
 tiempoEnUniversidad estudiante = do
-    tiempoActual <- getCurrentTime
-    return $ diffUTCTime tiempoActual (entrada estudiante)
+    tiempoActual <- getCurrentTime 
+    return $ diffUTCTime tiempoActual (entrada estudiante)  -- la diferencia entre el tiempo actual y el tiempo de entrada se representa con diffUTCTime
+    --el resultado de esta diferencia se guarda en NominalDiffTime
 
 -- Guardar info de los estudiantes en un archivo
 guardaruniversidad :: [Estudiante] -> IO ()
