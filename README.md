@@ -1,8 +1,12 @@
 # pruebahaskell
 Trabajo presentado por:
 
-	Jeronimo Alzate Isaza
+Jeronimo Alzate Isaza
  
-	Samuel Ramirez Noreña
+Samuel Ramirez Noreña
  
-		Link de el video :
+
+Plataforma usada : vscode
+  
+ 
+Link de el video :
