@@ -1,8 +1,8 @@
 # pruebahaskell
 Trabajo presentado por:
 
-	Jeronimo Alzate
+	Jeronimo Alzate Isaza
  
-	Samuel Noreña
+	Samuel Ramirez Noreña
  
 		Link de el video :
