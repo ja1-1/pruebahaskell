@@ -50,7 +50,7 @@ cargaruniversidad = do
 -- Mostrar un estudiante
 mostrarEstudiante :: Estudiante -> String
 mostrarEstudiante (Estudiante id entrada salida) =
-    "ID: " ++ id ++ ", Entrada: " ++ show entrada ++ ", Salida: " ++ maybe "En la universidad" show salida
+    "ID: " ++ id ++ ", Entrada: " ++ show entrada ++ ", Salida: " ++ maybe "El estudiante aun se encuentra en la universidad" show salida
 
 -- Listar universidad
 listaruniversidad :: [Estudiante] -> IO ()
@@ -63,7 +63,7 @@ listaruniversidad universidad = do
 main :: IO ()
 main = do
     universidad <- cargaruniversidad
-    putStrLn "Bienvenido al Sistema de la universidad."
+    putStrLn "Bienvenido al Sistema"
     cicloPrincipal universidad
 
 cicloPrincipal :: [Estudiante] -> IO ()
@@ -96,7 +96,7 @@ cicloPrincipal universidad = do
             cicloPrincipal universidadActualizados
         
         "3" -> do
-            putStrLn "Ingrese el ID del estudiante a buscar:"
+            putStrLn "Ingrese el ID del estudiante que va a buscar:"
             id <- getLine
             case buscarEstudiante id universidad of
                 Just estudiante -> do
