@@ -1,4 +1,4 @@
-# pruebahaskell
+# Programa de estudiantes en haskell
 Trabajo presentado por:
 
  Jeronimo Alzate Isaza
@@ -12,3 +12,5 @@ Plataforma usada :
   
  
 Link de el video :
+
+https://youtu.be/o1UATRZlpQ4
